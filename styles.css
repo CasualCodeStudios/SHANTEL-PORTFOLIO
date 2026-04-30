@@ -123,7 +123,7 @@ nav#mainNav.scrolled{
   padding: 0.5rem;
   background-color: rgba(51, 44, 36, 0.541);
 }
-.live-dot .branch-dot{
+.live-dot span{
   width:8px;height:8px;border-radius:50%;background:rgb(2, 170, 2);
   animation: blink 2s infinite;
 }
