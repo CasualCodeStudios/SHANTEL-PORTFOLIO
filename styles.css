@@ -115,8 +115,18 @@ nav#mainNav.scrolled{
   filter: drop-shadow(2px 2px 1px var(--cream));object-fit:contain;
 
 }
-nav#mainNav.scrolled .nav-logo{color:var(--black);}
-
+.live-dot{
+  font-style: italic;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgba(51, 44, 36, 0.541);
+}
+.live-dot .branch-dot{
+  width:8px;height:8px;border-radius:50%;background:rgb(2, 170, 2);
+  animation: blink 2s infinite;
+}
 .nav-links{display:flex;gap:2rem;list-style:none;}
 .nav-links a{
   font-family:'Roboto Mono',monospace;
