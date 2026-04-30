@@ -689,6 +689,15 @@ nav#mainNav.scrolled .nav-toggle span{background:var(--black);}
 }
 .cbc-branch-badge .branch-dot{
   width:8px;height:8px;border-radius:50%;background:var(--brown-light);
+  animation: blink 2s infinite;
+}
+@keyframes blink {
+  0%, 100%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
 }
 
 .cbc-classification{
