@@ -118,10 +118,10 @@ nav#mainNav.scrolled{
 .live-dot{
   font-style: italic;
   font-weight: 600;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 10px;
-  padding: 0.5rem;
-  background-color: rgba(31, 36, 31, 0.712);
+  padding: 0.5rem 0.9rem;
+  background-color: rgba(53, 61, 53, 0.512);
   animation: text-blink 2s infinite;
 }
 @keyframes text-blink{
@@ -129,6 +129,7 @@ nav#mainNav.scrolled{
     color: green;
   }
   50%{
+    border-color: green;
     color: transparent;
   }
 }
