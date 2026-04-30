@@ -121,7 +121,6 @@ nav#mainNav.scrolled{
   border: 2px solid transparent;
   border-radius: 10px;
   padding: 0.5rem 0.9rem;
-  background-color: rgba(53, 61, 53, 0.512);
   animation: text-blink 2s infinite;
 }
 @keyframes text-blink{
