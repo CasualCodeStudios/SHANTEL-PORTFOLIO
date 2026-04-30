@@ -112,7 +112,7 @@ nav#mainNav.scrolled{
 }
 .nav-logo img{
   width:50px;height:62px;
-  filter: drop-shadow(2px 5px 5px var(--cream));object-fit:contain;
+  filter: drop-shadow(2px 3px 2px var(--cream));object-fit:contain;
 
 }
 nav#mainNav.scrolled .nav-logo{color:var(--black);}
