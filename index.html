@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shantel — Home Science & Biology Teacher | Lifelong Learner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&family=Roboto+Slab:wght@300;400;600;700;800&family=Roboto+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follower" id="cursorFollower"></div>
+
+<!-- SCROLL TO TOP -->
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 16V4M10 4L5 9M10 4l5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- FLOATING NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo"><img src="logo.png" alt="Shantel — Teacher Logo"></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#academics">Academics</a></li>
+    <li><a href="#cbc-trends">CBC Trends</a></li>
+    <li><a href="#career">Career</a></li>
+    <li><a href="#life">Life</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<nav class="nav-drawer" id="navDrawer" aria-label="Mobile menu">
+  <a href="#about"      onclick="closeDrawer()">About</a>
+  <a href="#teaching"   onclick="closeDrawer()">Teaching</a>
+  <a href="#academics"  onclick="closeDrawer()">Academics</a>
+  <a href="#cbc-trends" onclick="closeDrawer()">CBC Trends</a>
+  <a href="#career"     onclick="closeDrawer()">Career</a>
+  <a href="#life"       onclick="closeDrawer()">Life</a>
+  <a href="#contact"    onclick="closeDrawer()">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <span class="hero-tag">Home Science · Biology · University of Eldoret · STEM Pathway</span>
+      <h1 class="hero-name">Shantel<span class="last accent">de-teacher</span></h1>
+      <p class="hero-subtitle">In my classroom, curiosity is the curriculum. I teach students not just to answer questions — but to ask better ones.</p>
+      <div class="hero-badges">
+        <span class="badge">Home Science</span>
+        <span class="badge">Biology</span>
+        <span class="badge brown">STEM Pathway</span>
+        <span class="badge">CBC Educator</span>
+      </div>
+      <div class="hero-cta">
+        <a href="#about" class="btn-primary">My World →</a>
+        <a href="#contact" class="btn-outline">Connect</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-image-frame">
+        <div class="hero-portrait-wrap">
+          <img src="teacher-square.jpg" alt="Shantel — Teacher Portrait" onerror="this.style.display='none';this.parentElement.querySelector('.portrait-initials').style.display='block'">
+          <span class="portrait-initials" style="display:none">SN</span>
+        </div>
+        <div class="hero-frame-deco"></div>
+        <div class="hero-frame-deco2"></div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item"><div class="stat-num">BSc</div><div class="stat-label">Home Science</div></div>
+        <div class="stat-item"><div class="stat-num">Bio</div><div class="stat-label">Biology Teacher</div></div>
+        <div class="stat-item"><div class="stat-num">365</div><div class="stat-label">Days Learning</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker">HOME SCIENCE <span>✦</span> BIOLOGY <span>✦</span> COOKING & NUTRITION <span>✦</span> NETBALL <span>✦</span> UNIVERSITY OF ELDORET <span>✦</span> LIFELONG LEARNING <span>✦</span> CBC EDUCATION <span>✦</span> STEM PATHWAY <span>✦</span> KENYAN EDUCATION <span>✦</span> EVERYDAY CURIOSITY <span>✦</span> HOME SCIENCE <span>✦</span> BIOLOGY <span>✦</span> COOKING & NUTRITION <span>✦</span> NETBALL <span>✦</span> UNIVERSITY OF ELDORET <span>✦</span> LIFELONG LEARNING <span>✦</span> CBC EDUCATION <span>✦</span> STEM PATHWAY <span>✦</span> KENYAN EDUCATION <span>✦</span> EVERYDAY CURIOSITY <span>✦</span></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-stack reveal">
+      <div class="about-img-main">
+        <img src="official-1.jpg" alt="Shantel — Teacher Portrait">
+      </div>
+      <div class="about-img-accent">
+        
+        <img src="street-side.jpg" alt="Shantel at work">
+        
+      </div>
+      <div class="about-decor-ring"></div>
+      <div class="about-decor-ring"></div>
+    </div>
+    <div class="about-text reveal">
+      <span class="section-label">Who She Is</span>
+      <h2 class="section-title">About <em>Shantel</em></h2>
+      <p>Shantel is a dedicated educator who brings Home Science and Biology to life with warmth, depth, and an infectious love for learning. A graduate of the University of Eldoret with a BSc in Home Science, she understands that knowledge is most powerful when it connects directly to how we live — what we eat, how we care for ourselves and our families, and how our bodies work.</p>
+      <p>Beyond the classroom, Shantel is a curious soul on a constant journey of growth. Whether she's mastering a new recipe, perfecting her netball game, or diving into a subject she hasn't taught before, her belief is simple: a teacher who never stops learning is a teacher who never stops inspiring.</p>
+      <div class="about-pills">
+        <span class="pill">Home Science</span>
+        <span class="pill">Biology</span>
+        <span class="pill">Nutrition & Food</span>
+        <span class="pill">Student-Centred Teaching</span>
+        <span class="pill">Lifelong Learning</span>
+        <span class="pill">Netball</span>
+        <span class="pill">CBC Educator</span>
+      </div>
+      <div class="accordion-cards">
+        <div class="acc-item" id="acc-homescience">
+          <button class="acc-trigger" onclick="toggleAccordion('homescience')">
+            <span class="acc-title">Home Science — Her Heart Subject</span>
+            <span class="acc-arrow">→</span>
+          </button>
+        </div>
+        <div class="acc-item" id="acc-biology">
+          <button class="acc-trigger" onclick="toggleAccordion('biology')">
+            <span class="acc-title">Biology — Decoding Living Systems</span>
+            <span class="acc-arrow">→</span>
+          </button>
+        </div>
+        <div class="acc-item" id="acc-cooking">
+          <button class="acc-trigger" onclick="toggleAccordion('cooking')">
+            <span class="acc-title">Cooking — Where Passion Meets Purpose</span>
+            <span class="acc-arrow">→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCORDION PANELS -->
+  <div class="acc-panel-wrap" id="panel-homescience">
+    <div class="acc-panel-inner">
+      <button class="acc-close" onclick="closeAccordion('homescience')">✕ Close</button>
+      <h3>Home Science — Her Heart Subject</h3>
+      <p>Home Science is more than a subject to Shantel — it's a philosophy of living well. From nutrition and textiles to family resource management and child development, she teaches her students that the science of everyday life is just as rigorous and rewarding as any laboratory discipline.</p>
+      <p>Her lessons are grounded in practical application: cooking demonstrations, nutritional analysis, environmental health, and consumer science all feature prominently. She believes when students see how a subject touches their daily lives, learning becomes genuinely exciting.</p>
+    </div>
+  </div>
+  <div class="acc-panel-wrap" id="panel-biology">
+    <div class="acc-panel-inner">
+      <button class="acc-close" onclick="closeAccordion('biology')">✕ Close</button>
+      <h3>Biology — Decoding Living Systems</h3>
+      <p>Teaching Biology allows Shantel to explore one of her deepest curiosities: how living things work. From cell biology to ecology, genetics to human physiology, she brings the complexity of life into sharp, accessible focus for her students.</p>
+      <p>She is committed to expanding her Biology knowledge every day — reading current research, following scientific developments, and translating new discoveries into classroom-ready content that sparks genuine wonder in her learners.</p>
+    </div>
+  </div>
+  <div class="acc-panel-wrap" id="panel-cooking">
+    <div class="acc-panel-inner">
+      <button class="acc-close" onclick="closeAccordion('cooking')">✕ Close</button>
+      <h3>Cooking — Where Passion Meets Purpose</h3>
+      <p>Shantel loves cooking — not just as a hobby, but as a daily practice of creativity, nourishment, and discovery. Inspired deeply by her Home Science background, she approaches the kitchen the way she approaches teaching: with curiosity, care, and a readiness to try something new.</p>
+      <p>Every new recipe is a new skill. Every technique mastered is another chapter in a lifelong education that no classroom can fully contain. Food, to Shantel, is connection — to culture, to family, and to the science of how our bodies are nourished.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHING -->
+<section id="teaching">
+  <div class="teaching-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+      <span class="section-label">What She Teaches</span>
+      <h2 class="section-title">Her <em>Classroom</em></h2>
+      <p class="section-sub">Every lesson is an opportunity. Every student, a story worth investing in.</p>
+    </div>
+    <div class="teaching-grid">
+      <!-- FOOD AND DRINKS -->
+      <div class="teaching-card reveal">
+        <div class="tc-icon"><img src="cutlery.png" alt="food icon"></div>
+        <h3>Food & Nutrition</h3>
+        <p>Exploring the science of what we eat — from macronutrients to meal planning, food safety, and the cultural richness of Kenyan cuisine. Practical, hands-on, and deeply relevant.</p>
+        <div class="tc-tag">Home Science Core</div>
+      </div>
+      <!-- TEXTILE AND CLOTHING -->
+      <div class="teaching-card reveal">
+        <div class="tc-icon"><img src="clothes.png" alt="textile and clothing"></div>
+        <h3>Textiles & Clothing</h3>
+        <p>From fibre types to garment construction — teaching students about fabric, fashion, and the economics of sustainable clothing choices. Creativity meets applied science.</p>
+        <div class="tc-tag">Home Science</div>
+      </div>
+      <!-- HOME MANAGEMENT -->
+      <div class="teaching-card reveal">
+        <div class="tc-icon"><img src="management.png" alt="home management"></div>
+        <h3>Home Management</h3>
+        <p>Family resource management, environmental health, and housing — equipping students with knowledge to build healthy, efficient, and dignified homes.</p>
+        <div class="tc-tag">Home Science</div>
+      </div>
+      <!-- BIOLOGY -->
+      <div class="teaching-card reveal">
+        <div class="tc-icon"><img src="cell.png" alt="biology"></div>
+        <h3>Cell Biology</h3>
+        <p>The building blocks of all life — from organelles to cellular processes, metabolism, and mitosis. Making the microscopic world feel as vivid as the world outside the window.</p>
+        <div class="tc-tag">Biology</div>
+      </div>
+      <div class="teaching-card reveal">
+        <div class="tc-icon"><img src="biotechnology.png" alt="genetics study"></div>
+        <h3>Genetics & Heredity</h3>
+        <p>Decoding the language of DNA, inheritance patterns, and genetic diversity. Connecting Mendel's peas to real questions about identity, health, and human variation.</p>
+        <div class="tc-tag">Biology</div>
+      </div>
+      <div class="teaching-card reveal">
+        <div class="tc-icon"><img src="eco-friendly.png" alt="ecofriendly"></div>
+        <h3>Ecology & Environment</h3>
+        <p>Understanding ecosystems, biodiversity, and our role within the natural world — relevant to every student growing up in Kenya's rich and varied landscapes.</p>
+        <div class="tc-tag">Biology</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+      <span class="section-label">What She Brings</span>
+      <h2 class="section-title">Skills & <em>Strengths</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block reveal">
+        <div class="skill-circle" data-pct="92">
+          <svg viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="52" stroke="var(--brown-pale)" stroke-width="8"/>
+            <circle class="fill" cx="60" cy="60" r="52" stroke="var(--brown)" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 326.73" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.2s ease"/>
+          </svg>
+          <div class="skill-pct">92%</div>
+        </div>
+        <h4>Home Science Teaching</h4>
+        <p>Passionate, practical, and purpose-driven delivery of Home Science curriculum.</p>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-circle" data-pct="80">
+          <svg viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="52" stroke="var(--brown-pale)" stroke-width="8"/>
+            <circle class="fill" cx="60" cy="60" r="52" stroke="var(--brown)" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 326.73" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.2s ease"/>
+          </svg>
+          <div class="skill-pct">80%</div>
+        </div>
+        <h4>Biology Instruction</h4>
+        <p>Expanding daily through research, curiosity, and a commitment to her learners.</p>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-circle" data-pct="95">
+          <svg viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="52" stroke="var(--brown-pale)" stroke-width="8"/>
+            <circle class="fill" cx="60" cy="60" r="52" stroke="var(--brown)" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 326.73" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.2s ease"/>
+          </svg>
+          <div class="skill-pct">95%</div>
+        </div>
+        <h4>Culinary Arts</h4>
+        <p>A genuine love for cooking that grows with each new recipe attempted and mastered.</p>
+      </div>
+      <div class="skill-block reveal">
+        <div class="skill-circle" data-pct="87">
+          <svg viewBox="0 0 120 120" fill="none">
+            <circle cx="60" cy="60" r="52" stroke="var(--brown-pale)" stroke-width="8"/>
+            <circle class="fill" cx="60" cy="60" r="52" stroke="var(--brown)" stroke-width="8" stroke-linecap="round" stroke-dasharray="0 326.73" transform="rotate(-90 60 60)" style="transition:stroke-dasharray 1.2s ease"/>
+          </svg>
+          <div class="skill-pct">87%</div>
+        </div>
+        <h4>Student Engagement</h4>
+        <p>Creating warm, inclusive classrooms where every student feels seen and motivated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMICS -->
+<section id="academics">
+  <div class="exp-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+      <span class="section-label">Her Journey</span>
+      <h2 class="section-title">Academic <em>Background</em></h2>
+    </div>
+    <div class="exp-timeline">
+      <div class="exp-card reveal">
+        <div class="exp-year"><span class="mono">University</span></div>
+        <div class="exp-body">
+          <h3>BSc Home Science</h3>
+          <span class="exp-place">University of Eldoret, Kenya</span>
+          <p>Majored in Home Science with coursework spanning food and nutrition, textile science, family resource management, environmental health, and consumer science. Graduated with a strong foundation for classroom delivery and ongoing professional development.</p>
+        </div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-year"><span class="mono">Teaching</span></div>
+        <div class="exp-body">
+          <h3>Home Science & Biology Teacher</h3>
+          <span class="exp-place">Kenya — Active</span>
+          <p>Currently serving as an educator teaching both Home Science and Biology within Kenya's CBC framework. Committed to providing students with knowledge that goes beyond the syllabus — equipping them for life, health, and informed decision-making. Constantly expanding her Biology expertise to serve her learners better.</p>
+        </div>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-year"><span class="mono">Always</span></div>
+        <div class="exp-body">
+          <h3>Lifelong Learner</h3>
+          <span class="exp-place">Every day, everywhere</span>
+          <p>Shantel believes that a teacher's education never ends. She actively seeks new knowledge — in cooking, in biology, in teaching methodology, and in anything that makes her a richer, more well-rounded educator. One new skill every single day.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEACHING PHILOSOPHY DOWNLOAD -->
+    <div class="philosophy-download reveal">
+      <div class="philosophy-download-icon"><img src="download-pdf.png" alt=""></div>
+      <div class="philosophy-download-text">
+        <h3>Shantel's Teaching Philosophy</h3>
+        <p>A comprehensive presentation summarising Shantel's approach to education — her values, methods, CBC alignment, and commitment to every student she teaches. Available as a downloadable PDF.</p>
+        <a href="Shantel_Teaching_Philosophy.pdf" download class="btn-download">⬇ Download Presentation (PDF)</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CBC TRENDS SECTION -->
+<section id="cbc-trends">
+  <div class="cbc-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+      <span class="section-label">Kenya's Education System</span>
+      <h2 class="section-title" style="color:var(--white);">CBC <em>Educational Trends</em></h2>
+      <p class="section-sub" style="color:rgba(212,167,106,.7);margin:0 auto;">Relevant trends in Home Science and Biology teaching under Kenya's Competency-Based Curriculum — and where Shantel fits.</p>
+    </div>
+
+    <!-- Branch Classification -->
+    <div class="reveal" style="text-align:center;margin-bottom:2rem;">
+      <div class="cbc-branch-badge" style="display:inline-flex;">
+        <div class="branch-dot"></div>
+        <span>Shantel's CBC Classification</span>
+        <div class="branch-dot"></div>
+      </div>
+    </div>
+    <div class="cbc-classification reveal">
+      <div class="class-item">
+        <span class="class-item-label">CBC Pathway</span>
+        <div class="class-item-value">Science, Technology, Engineering & Mathematics (STEM)</div>
+      </div>
+      <div class="class-item">
+        <span class="class-item-label">Home Science Branch</span>
+        <div class="class-item-value">Applied Sciences — Food, Textile & Family Resource Management</div>
+      </div>
+      <div class="class-item">
+        <span class="class-item-label">Biology Branch</span>
+        <div class="class-item-value">Life Sciences — Cell Biology, Genetics, Ecology & Physiology</div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="cbc-stat-row reveal">
+      <div class="cbc-stat">
+        <div class="cbc-stat-num">59%</div>
+        <div class="cbc-stat-label">of 2025 KJSEA candidates showed STEM potential (incl. Home Science & Biology)</div>
+      </div>
+      <div class="cbc-stat">
+        <div class="cbc-stat-num">1.1M+</div>
+        <div class="cbc-stat-label">learners sat Kenya's first Junior School Education Assessment in 2025</div>
+      </div>
+      <div class="cbc-stat">
+        <div class="cbc-stat-num">2017</div>
+        <div class="cbc-stat-label">Year CBC was introduced in Kenya, replacing the 8-4-4 system</div>
+      </div>
+    </div>
+
+    <!-- Trends Grid -->
+    <div class="cbc-trends-grid">
+      <div class="cbc-trend-card reveal">
+        <span class="cbc-trend-num">Trend 01</span>
+        <h3>Competency-Based Learning Over Content Delivery</h3>
+        <p>CBC shifts the focus from what students know to what they can do. For Home Science, this means assessing practical skills — cooking labs, textile projects, nutrition analysis — alongside theory. For Biology, scientific inquiry, fieldwork, and lab investigations are now core assessment components rather than optional extras.</p>
+        <span class="cbc-trend-tag">Home Science · Biology</span>
+      </div>
+      <div class="cbc-trend-card reveal">
+        <span class="cbc-trend-num">Trend 02</span>
+        <h3>Continuous Assessment Replaces High-Stakes Exams</h3>
+        <p>Classroom-Based Assessment for Learning Activities (CALA) replaces end-of-year examinations with ongoing portfolio-based assessment. Home Science teachers document practical projects and cooking demonstrations; Biology teachers record lab reports, field studies, and scientific investigations throughout the year.</p>
+        <span class="cbc-trend-tag">Assessment Reform</span>
+      </div>
+      <div class="cbc-trend-card reveal">
+        <span class="cbc-trend-num">Trend 03</span>
+        <h3>Learner-Centred Pedagogy as the New Standard</h3>
+        <p>Teachers are now facilitators of discovery rather than lecturers of content. Students learn through project-based activities, peer collaboration, and real-world problem-solving. Home Science students plan and execute meals and household budgets; Biology students design experiments and analyse ecosystems in their local environments.</p>
+        <span class="cbc-trend-tag">Pedagogy</span>
+      </div>
+      <div class="cbc-trend-card reveal">
+        <span class="cbc-trend-num">Trend 04</span>
+        <h3>Digital Literacy Integration Across All Subjects</h3>
+        <p>CBC mandates ICT integration across all subjects. Home Science teachers are expected to use nutrition databases, recipe planning applications, and textile design software. Biology teachers leverage digital microscopes, virtual laboratory platforms, and online scientific databases to enrich practical learning experiences.</p>
+        <span class="cbc-trend-tag">Digital Education</span>
+      </div>
+      <div class="cbc-trend-card reveal">
+        <span class="cbc-trend-num">Trend 05</span>
+        <h3>Life Skills and Holistic Education at the Core</h3>
+        <p>CBC explicitly links academic content to real-life application. Home Science is recognised as a life skills subject — directly addressing nutrition, health, and family management in ways that are immediately applicable. Biology connects to health education, environmental conservation, and career pathways in medicine, agriculture, and environmental science.</p>
+        <span class="cbc-trend-tag">Life Skills · Holistic</span>
+      </div>
+      <div class="cbc-trend-card reveal">
+        <span class="cbc-trend-num">Trend 06</span>
+        <h3>Environmental Sustainability in Science Teaching</h3>
+        <p>CBC places strong emphasis on environmental stewardship and sustainability. Biology teachers are expected to incorporate ecology, conservation, and climate change into their lessons, connecting Kenya's rich biodiversity to global environmental challenges. Home Science teachers address sustainable food systems, waste management, and eco-friendly household practices aligned with Kenya's Vision 2030 green economy goals.</p>
+        <span class="cbc-trend-tag">Sustainability · Biology</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER GROWTH SECTION -->
+<section style="display: none;" id="career">
+  <div class="career-inner">
+    <div class="reveal career-intro">
+      <span class="section-label">Professional Development</span>
+      <h2 class="section-title">Career <em>Growth</em> Opportunities</h2>
+      <p class="section-sub">Pathways, resources, and strategies for Shantel to grow as an educator, expand her expertise, and make a broader impact in Kenyan education.</p>
+    </div>
+    <div class="career-grid">
+      <div class="career-card reveal">
+        <div class="career-card-icon">🎓</div>
+        <h3>Postgraduate Studies</h3>
+        <p>Pursuing a Master's degree in Education, Home Science, or Biological Sciences would deepen subject expertise, open doors to university lecturing, and qualify Shantel for curriculum development roles with KICD or the Ministry of Education.</p>
+        <span class="career-tag">Higher Education</span>
+      </div>
+      <div class="career-card reveal">
+        <div class="career-card-icon">📋</div>
+        <h3>TSC Professional Development</h3>
+        <p>The Teachers Service Commission (TSC) offers structured professional development programmes, including CBC retooling workshops, subject mastery courses, and leadership training for aspiring heads of department and deputy principals.</p>
+        <span class="career-tag">TSC · Leadership</span>
+      </div>
+      <div class="career-card reveal">
+        <div class="career-card-icon">🌐</div>
+        <h3>Online Certifications</h3>
+        <p>Platforms such as Coursera, edX, and FutureLearn offer internationally recognised certifications in nutrition science, biology, educational technology, and curriculum design — all of which strengthen Shantel's professional profile and CBC delivery capacity.</p>
+        <span class="career-tag">Online Learning</span>
+      </div>
+      <div class="career-card reveal">
+        <div class="career-card-icon">✍️</div>
+        <h3>Educational Content Creation</h3>
+        <p>Developing CBC-aligned teaching resources, lesson plans, and assessment tools for platforms like Elimu Bora or self-publishing creates additional income streams while establishing Shantel as a thought leader in Home Science and Biology education in Kenya.</p>
+        <span class="career-tag">Content · EdTech</span>
+      </div>
+      <div class="career-card reveal">
+        <div class="career-card-icon">🤝</div>
+        <h3>Professional Networks & Associations</h3>
+        <p>Joining the Kenya Science Teachers Association (KESTA), Kenya Home Economics Teachers Association, or international bodies such as the International Federation for Home Economics (IFHE) connects Shantel with peers, research, and collaborative opportunities across Africa and beyond.</p>
+        <span class="career-tag">Networking</span>
+      </div>
+      <div class="career-card reveal">
+        <div class="career-card-icon">🔬</div>
+        <h3>Research & Curriculum Development</h3>
+        <p>Contributing to educational research on CBC implementation, Home Science pedagogy, or Biology teaching in Kenyan contexts positions Shantel as an expert voice. Published research opens doors to consultancy roles, conference speaking, and collaboration with KICD on curriculum design.</p>
+        <span class="career-tag">Research · KICD</span>
+      </div>
+    </div>
+
+    <div class="career-pathway reveal">
+      <h3>Shantel's Recommended Career Growth Pathway</h3>
+      <p>A practical, step-by-step roadmap for professional advancement within Kenya's education system — from classroom excellence to educational leadership.</p>
+      <div class="career-steps">
+        <div class="career-step">
+          <div class="career-step-num">01</div>
+          <h4>Master CBC Delivery</h4>
+          <p>Complete TSC CBC retooling, earn CALA certification, and build a portfolio of competency-based lesson plans.</p>
+        </div>
+        <div class="career-step">
+          <div class="career-step-num">02</div>
+          <h4>Pursue Postgraduate Study</h4>
+          <p>Enrol in a Master's programme in Education or Applied Sciences to deepen expertise and open senior roles.</p>
+        </div>
+        <div class="career-step">
+          <div class="career-step-num">03</div>
+          <h4>Build a Professional Brand</h4>
+          <p>Create CBC teaching resources, publish educational content, and join professional associations to grow visibility.</p>
+        </div>
+        <div class="career-step">
+          <div class="career-step-num">04</div>
+          <h4>Move into Leadership</h4>
+          <p>Progress to Head of Department, Deputy Principal, or curriculum development roles with TSC, KICD, or universities.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIFE -->
+<section style="display: none;" id="life">
+  <div class="life-inner">
+    <div class="reveal" style="text-align:center;margin-bottom:3.5rem;">
+      <span class="section-label">Beyond the Classroom</span>
+      <h2 class="section-title">Her <em>Life</em></h2>
+    </div>
+
+    <!-- The Cook — image left, text right -->
+    <div class="life-interest-card reveal">
+      <div class="interest-img-wrap">
+        <img src="https://i.pinimg.com/736x/b5/d9/3a/b5d93ad77ca4dbfe098cb3fb5d0c1396.jpg" alt="Shantel the Cook" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="interest-img-placeholder" style="display:none">🍳</div>
+      </div>
+      <div>
+        <h4 class="interest-name">The Cook</h4>
+        <p>For Shantel, the kitchen is a classroom without walls. Inspired by a career spent teaching nutrition and food science, she brings the same curiosity to cooking that she brings to her lessons. New dish, new technique, new flavour profile — she's always ready. Her philosophy? If you can understand how food works, you can make anything taste extraordinary.</p>
+      </div>
+    </div>
+
+    <!-- The Athlete — image right, text left -->
+    <div class="life-interest-card reverse reveal">
+      <div class="interest-img-wrap">
+        <div class="interest-img-placeholder">🏐</div>
+      </div>
+      <div>
+        <h4 class="interest-name">The Athlete</h4>
+        <p>Netball is where Shantel finds her rhythm — the quick passes, the teamwork, the strategy, the joy of a body in motion. On the court she is competitive, collaborative, and fully alive. It's not just exercise; it's community. There's a special kind of energy that comes from moving alongside others toward a shared goal — in netball as in teaching.</p>
+      </div>
+    </div>
+
+    <!-- Pinterest Gallery -->
+    <div class="gallery-section reveal">
+      <h3 class="gallery-section-title">Moments & Inspirations</h3>
+      <div class="pinterest-grid">
+        <div class="pinterest-item" style="height:220px;background:linear-gradient(135deg,#4A2810,#7B3F00);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">📚</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Always reading</p>
+          <div class="pin-overlay"><p>"Every book is a lesson I haven't taught yet."</p></div>
+        </div>
+        <div class="pinterest-item" style="height:180px;background:linear-gradient(135deg,#3D2412,#7B3F00,#C47A3A);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">🧪</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Biology lab</p>
+          <div class="pin-overlay"><p>"Science explains the world. My job is to make that explanation irresistible."</p></div>
+        </div>
+        <div class="pinterest-item" style="height:260px;background:linear-gradient(135deg,#2C1A0E,#4A2810,#7B3F00);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">🍱</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">New recipe</p>
+          <div class="pin-overlay"><p>"A perfectly balanced meal is a Home Science lesson made edible."</p></div>
+        </div>
+        <!-- Fun Fact 1 after 3 items -->
+        <div class="fun-fact-card">
+          <span class="ff-label">Fun Fact</span>
+          <p>"The human body contains approximately 37 trillion cells — and every single one of them is a potential lesson."</p>
+          <span class="ff-author">— Biology Classroom Wisdom</span>
+        </div>
+        <div class="pinterest-item" style="height:200px;background:linear-gradient(135deg,#4A1E00,#7B3F00,#9E5A1B);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">🏐</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Court time</p>
+          <div class="pin-overlay"><p>"On the netball court, I remember what it feels like to be a student again."</p></div>
+        </div>
+        <div class="pinterest-item" style="height:240px;background:linear-gradient(135deg,#3D2412,#6B3500,#B56C2A);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">🌱</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Growing daily</p>
+          <div class="pin-overlay"><p>"Growth happens quietly, then all at once. I'm in the quiet phase — always."</p></div>
+        </div>
+        <div class="pinterest-item" style="height:180px;background:linear-gradient(135deg,#1A0F0A,#3D2412,#7B3F00);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">👩‍🎓</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Eldoret alumni</p>
+          <div class="pin-overlay"><p>"University gave me the foundation. Teaching gives me the reason to keep building."</p></div>
+        </div>
+        <!-- Fun Fact 2 after 3 more items -->
+        <div class="fun-fact-card">
+          <span class="ff-label">Educational Quote</span>
+          <p>"Tell me and I forget. Teach me and I remember. Involve me and I learn."</p>
+          <span class="ff-author">— Benjamin Franklin</span>
+        </div>
+        <div class="pinterest-item" style="height:220px;background:linear-gradient(135deg,#4A2810,#9E5A1B);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">🍳</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Kitchen science</p>
+          <div class="pin-overlay"><p>"Every recipe is a chemistry experiment waiting to happen."</p></div>
+        </div>
+        <div class="pinterest-item" style="height:200px;background:linear-gradient(135deg,#2C1A0E,#7B3F00);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">🌍</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Kenya proud</p>
+          <div class="pin-overlay"><p>"Teaching in Kenya means teaching for the future of an entire nation."</p></div>
+        </div>
+        <div class="pinterest-item" style="height:260px;background:linear-gradient(135deg,#4A1E00,#C47A3A);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.5rem;">
+          <span style="font-size:3rem;">✏️</span>
+          <p style="font-size:.65rem;color:rgba(255,255,255,.6);font-family:'Roboto Mono',monospace;text-align:center;padding:0 .5rem;">Lesson planning</p>
+          <div class="pin-overlay"><p>"A great lesson plan is an act of love for your students."</p></div>
+        </div>
+        <!-- Fun Fact 3 after 3 more items -->
+        <div class="fun-fact-card">
+          <span class="ff-label">Home Science Fact</span>
+          <p>"Home Science is one of the few subjects that directly addresses Kenya's nutritional health challenges — malnutrition, food insecurity, and dietary disease — in every single lesson."</p>
+          <span class="ff-author">— KICD Curriculum Framework, 2017</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Expanded Life Sections (formerly life-quotes, now 4 full sections) -->
+    <div class="life-expanded-sections reveal">
+      <div class="les-card">
+        <span class="les-icon">🍳</span>
+        <h3>Cooking as Home Science in Action</h3>
+        <p>"Cooking is Home Science in its most delicious form. I never stop experimenting."</p>
+        <p>Every dish Shantel prepares is an application of the principles she teaches — understanding how heat transforms proteins, how emulsification creates sauces, how fermentation preserves food. Her kitchen is a living laboratory where food science becomes flavour.</p>
+        <div class="les-fact">Did you know? Kenya's traditional cuisine is one of the most nutritionally diverse in East Africa, incorporating leafy greens, legumes, and fermented foods that align perfectly with modern nutritional science.</div>
+        <a href="https://www.nutrition.go.ke/" target="_blank" rel="noopener" class="les-link">Kenya Nutrition Resources →</a>
+      </div>
+      <div class="les-card">
+        <span class="les-icon">🔬</span>
+        <h3>Biology: A Lifelong Curiosity</h3>
+        <p>"The more Biology I learn, the more I want to share. My students deserve a teacher who's still curious."</p>
+        <p>From the double helix to the food chain, Biology connects everything. Shantel reads current research, follows scientific developments, and translates new discoveries into classroom-ready content. Her goal: to make the invisible world of cells and genes feel as real as the world outside the window.</p>
+        <div class="les-fact">Fascinating fact: Kenya is home to over 35,000 species of plants and animals — making it one of the world's most biodiverse nations and a living classroom for ecology and conservation.</div>
+        <a href="https://www.nature.com/subjects/biology" target="_blank" rel="noopener" class="les-link">Explore Biology Research →</a>
+      </div>
+      <div class="les-card">
+        <span class="les-icon">🏐</span>
+        <h3>Netball: The Teamwork Classroom</h3>
+        <p>"Netball taught me that a good team makes everyone look like a star."</p>
+        <p>On the court, Shantel practices the same values she brings to her classroom — communication, strategy, trust, and the belief that every team member has a role that matters. Netball keeps her physically active, mentally sharp, and connected to the joy of collaborative achievement.</p>
+        <div class="les-fact">Sport science connection: Regular physical activity has been shown to improve cognitive function, memory consolidation, and academic performance — making Shantel's netball habit a professional asset as much as a personal one.</div>
+        <a href="https://www.netballkenya.co.ke/" target="_blank" rel="noopener" class="les-link">Kenya Netball Federation →</a>
+      </div>
+      <div class="les-card">
+        <span class="les-icon">📖</span>
+        <h3>Reading, Reflecting, Growing</h3>
+        <p>"I read, I experiment, I reflect. That's the lesson plan I follow for my own life."</p>
+        <p>Shantel's commitment to lifelong learning is not a slogan — it's a daily practice. She reads widely across education, science, nutrition, and culture. She reflects on her teaching, adjusts her methods, and approaches her own growth with the same curiosity she asks of her students.</p>
+        <div class="les-fact">Research insight: Teachers who engage in regular professional reading and reflective practice demonstrate measurably higher student outcomes and greater career longevity, according to the East African Journal of Education Studies.</div>
+        <a href="https://www.tsc.go.ke/" target="_blank" rel="noopener" class="les-link">TSC Professional Development →</a>
+      </div>
+    </div>
+
+    <!-- University of Eldoret Spotlight -->
+    <div class="uoe-spotlight reveal">
+      <div class="uoe-img">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/University_of_Eldoret_main_gate.jpg/1200px-University_of_Eldoret_main_gate.jpg" alt="University of Eldoret" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="uoe-placeholder" style="display:none">🎓</div>
+      </div>
+      <div class="uoe-text">
+        <h3>University of Eldoret — Shantel's Alma Mater</h3>
+        <p>The University of Eldoret, located in Eldoret, Uasin Gishu County, Kenya, is one of the country's leading public universities. Established in 1994, it is renowned for its programmes in science, technology, education, and agriculture. The School of Education at UoE has produced thousands of dedicated teachers who serve across Kenya's education system.</p>
+        <p>Shantel's BSc in Home Science from UoE gave her the scientific rigour, practical skills, and educational foundation that defines her teaching today. The university's emphasis on applied knowledge and community service aligns perfectly with the values she brings to every classroom.</p>
+        <a href="https://www.uoeld.ac.ke/" target="_blank" rel="noopener" class="uoe-link">Visit University of Eldoret →</a>
+      </div>
+    </div>
+
+    <!-- Traits -->
+    <div class="life-traits">
+      <div class="trait-card reveal">
+        <span class="trait-icon">🌡️</span>
+        <h4>Practically-Minded</h4>
+        <p>Shantel bridges theory and practice effortlessly. Her lessons are grounded in real life — from the kitchen to the classroom, knowledge must be useful.</p>
+      </div>
+      <div class="trait-card reveal">
+        <span class="trait-icon">🌱</span>
+        <h4>Always Growing</h4>
+        <p>She sets herself one new thing to learn every day. Whether it's a recipe, a concept, or a technique — stagnation is simply not in her vocabulary.</p>
+      </div>
+      <div class="trait-card reveal">
+        <span class="trait-icon">🤝</span>
+        <h4>Student-Centred</h4>
+        <p>Her students aren't just learners — they're her reason. She tailors every lesson to meet them where they are and take them somewhere further.</p>
+      </div>
+      <div class="trait-card reveal">
+        <span class="trait-icon">🔥</span>
+        <h4>Warm & Driven</h4>
+        <p>Teaching with warmth doesn't mean being soft. Shantel holds high expectations wrapped in care — producing learners who are both capable and confident.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="reveal" style="text-align:center;">
+      <span class="section-label">Let's Connect</span>
+      <h2 class="section-title">Get in <em>Touch</em></h2>
+    </div>
+    <div class="contact-layout">
+      <!-- Left: image + socials -->
+      <div class="contact-left reveal">
+        <div class="contact-img">
+          <img src="einstein.jpg" alt="Education and connection" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="contact-img-placeholder" style="display:none">✉️</div>
+        </div>
+        <p class="contact-tagline">Whether it's educational collaboration, a shared love of good food, netball tips, or simply a conversation about what it means to never stop learning — the door is open.</p>
+        <div class="contact-socials">
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="contact-social-item">
+            <div class="social-icon ig"><img src="instagram.png" alt="instagram icon"></div>
+          </a>
+          <a href="https://wa.me/254700000000" target="_blank" rel="noopener" class="contact-social-item">
+            <div class="social-icon wa"><img src="whatsapp.png" alt="whatsapp icon"></div>
+          </a>
+          <a href="mailto:shantel.pretty.com" class="contact-social-item">
+            <div class="social-icon em"><img src="gmail.png" alt="email icon"></div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal">
+        <form class="contact-form" action="#" method="POST">
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">About You</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-name">Your Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email Address</label>
+                <input type="email" id="cf-email" name="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Your Message</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cf-subject">What brings you here?</label>
+                <select id="cf-subject" name="subject">
+                  <option>Educational Collaboration</option>
+                  <option>Home Science Inquiry</option>
+                  <option>Biology Discussion</option>
+                  <option>CBC Teaching Resources</option>
+                  <option>Cooking & Recipes</option>
+                  <option>Netball & Sports</option>
+                  <option>Career Opportunities</option>
+                  <option>General Hello</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cf-institution">School / Institution (Optional)</label>
+                <input type="text" id="cf-institution" name="institution" placeholder="Your school or organisation">
+              </div>
+            </div>
+            <div class="form-group full">
+              <label for="cf-message">Your Message</label>
+              <textarea id="cf-message" name="message" placeholder="Say hello, ask a question, or start a conversation..." required></textarea>
+            </div>
+          </fieldset>
+          <div class="form-submit">
+            <button type="submit" class="btn-primary">Send Message →</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="contact-info-row reveal">
+      <div class="contact-info-item"><span class="ci-label">Subjects</span><span class="ci-value">Home Science · Biology</span></div>
+      <div class="contact-info-item"><span class="ci-label">CBC Pathway</span><span class="ci-value">STEM</span></div>
+      <div class="contact-info-item"><span class="ci-label">Alma Mater</span><span class="ci-value">University of Eldoret</span></div>
+      <div class="contact-info-item"><span class="ci-label">Location</span><span class="ci-value">Kenya</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand">
+      <div class="footer-logo">S<span>.</span>de-teacher
+      <p class="footer-desc">Shantel is a Home Science and Biology teacher dedicated to inspiring the next generation through practical knowledge, warm teaching, and the belief that a curious teacher is the most powerful force in any classroom.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#academics">Academics</a>
+        <a href="#cbc-trends">CBC Trends</a>
+        <a href="#career">Career</a>
+        <a href="#life">Life</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-newsletter">
+      <h4 class="newsletter-title">Stay Inspired</h4>
+      <p class="newsletter-desc">Subscribe for teaching insights, recipe ideas, CBC updates, and notes on lifelong learning from Shantel's journey.</p>
+      <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+        <div class="newsletter-field">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </div>
+        <p class="newsletter-fine">No spam. Just warmth and wisdom. Unsubscribe anytime.</p>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-copy">© 2026 Shantel. All rights reserved. — Teaching with Heart, Learning with Joy.</p>
+    <p class="footer-dev">Developed by <a href="https://casual-code-studios.vercel.app/" target="_blank" rel="noopener noreferrer">Casual Code Studios</a></p>
+  </div>
+</footer>
+
+<script>
+/* --- CURSOR --- */
+const isFine = window.matchMedia('(pointer:fine)').matches;
+if(isFine){
+  const cur=document.getElementById('cursor'),fol=document.getElementById('cursorFollower');
+  document.addEventListener('mousemove',e=>{
+    cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';
+    setTimeout(()=>{fol.style.left=e.clientX+'px';fol.style.top=e.clientY+'px';},80);
+  });
+  document.querySelectorAll('a,button,.life-interest-card,.teaching-card,.skill-block,.acc-trigger,.trait-card,.career-card,.cbc-trend-card').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cur.style.transform='translate(-50%,-50%) scale(2.5)';cur.style.background='var(--brown-light)';});
+    el.addEventListener('mouseleave',()=>{cur.style.transform='translate(-50%,-50%) scale(1)';cur.style.background='var(--brown)';});
+  });
+}
+
+/* --- NAV SCROLL --- */
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>80),{passive:true});
+
+/* --- HAMBURGER --- */
+const toggle=document.getElementById('navToggle'),drawer=document.getElementById('navDrawer');
+toggle.addEventListener('click',()=>{
+  const open=toggle.classList.toggle('open');
+  drawer.classList.toggle('open',open);
+  document.body.style.overflow=open?'hidden':'';
+  toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+});
+function closeDrawer(){
+  toggle.classList.remove('open');drawer.classList.remove('open');
+  document.body.style.overflow='';toggle.setAttribute('aria-label','Open menu');
+}
+
+/* --- SCROLL TO TOP --- */
+const scrollTopBtn=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{
+  scrollTopBtn.classList.toggle('visible',window.scrollY>window.innerHeight*0.8);
+},{passive:true});
+scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* --- INTERSECTION OBSERVER --- */
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');});
+},{threshold:0.08});
+document.querySelectorAll('.reveal,.exp-card,.trait-card,.teaching-card,.skill-block,.cbc-trend-card,.career-card').forEach((el,i)=>{
+  el.style.transitionDelay=(i%5*80)+'ms';io.observe(el);
+});
+
+/* --- SKILL CIRCLES --- */
+const circumference = 2 * Math.PI * 52;
+const circIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      const fillEl = e.target.querySelector('.fill');
+      const pct = parseInt(e.target.dataset.pct || 0);
+      const dash = (pct / 100) * circumference;
+      fillEl.style.strokeDasharray = `${dash} ${circumference}`;
+      circIO.unobserve(e.target);
+    }
+  });
+},{threshold:0.3});
+document.querySelectorAll('.skill-circle').forEach(c=>circIO.observe(c));
+
+/* --- PARALLAX HERO (desktop only) --- */
+if(isFine){
+  window.addEventListener('scroll',()=>{
+    const frame=document.querySelector('.hero-image-frame');
+    if(frame)frame.style.transform=`translateY(${window.scrollY*.15}px)`;
+  },{passive:true});
+}
+
+/* --- ACCORDION --- */
+function toggleAccordion(key){
+  const panel=document.getElementById('panel-'+key);
+  const btn=document.querySelector(`#acc-${key} .acc-trigger`);
+  const isOpen=panel.classList.contains('open');
+  document.querySelectorAll('.acc-panel-wrap').forEach(p=>p.classList.remove('open'));
+  document.querySelectorAll('.acc-trigger').forEach(b=>b.classList.remove('active'));
+  document.body.style.overflow='';
+  if(!isOpen){
+    panel.classList.add('open');
+    btn.classList.add('active');
+    document.body.style.overflow='hidden';
+  }
+}
+function closeAccordion(key){
+  const panel=document.getElementById('panel-'+key);
+  const btn=document.querySelector(`#acc-${key} .acc-trigger`);
+  panel.classList.remove('open');
+  btn.classList.remove('active');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape'){
+    document.querySelectorAll('.acc-panel-wrap').forEach(p=>p.classList.remove('open'));
+    document.querySelectorAll('.acc-trigger').forEach(b=>b.classList.remove('active'));
+    document.body.style.overflow='';
+  }
+});
+
+/* --- NEWSLETTER FORM --- */
+function handleNewsletter(e){
+  e.preventDefault();
+  const btn=e.target.querySelector('button');
+  const originalText=btn.textContent;
+  btn.textContent='Subscribed ✓';
+  btn.style.background='#4A1E00';
+  setTimeout(()=>{btn.textContent=originalText;btn.style.background='';},3500);
+}
+</script>
+</body>
+</html>
