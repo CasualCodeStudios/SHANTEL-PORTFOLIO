@@ -488,7 +488,7 @@ nav#mainNav.scrolled .nav-toggle span{background:var(--black);}
   background:rgba(255, 255, 255, 0.911);cursor:pointer;border:none;
   transition:background .25s;
 }
-.acc-trigger:hover{background:rgba(123,63,0,.04);}
+.acc-trigger:hover{background:rgba(123,63,0,.04); color: #fed;}
 .acc-trigger.active{background:rgba(123,63,0,.06);}
 .acc-title{
   font-family:'Roboto Slab',serif;font-size:.9rem;font-weight:600;
