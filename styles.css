@@ -485,7 +485,7 @@ nav#mainNav.scrolled .nav-toggle span{background:var(--black);}
 .acc-trigger{
   width:100%;padding:1rem 1.3rem;
   display:flex;justify-content:space-between;align-items:center;
-  background:rgba(255, 255, 255, 0.911);cursor:pointer;border:none;
+  background:rgba(255, 255, 255, 0.911);cursor:pointer;border:2px solid #F5EDD8;
   transition:background .25s;
 }
 .acc-trigger:hover{background:rgba(123,63,0,.04); color: #fed;}
